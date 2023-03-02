@@ -1,33 +1,31 @@
-# Getting Started with Create React App
+# D.A.N.T.E.
+ 
+Ce projet a été créé avec [Create React App](https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+## Scripts disponibles
 
-## Available Scripts
-
-In the project directory, you can run:
+Dans le dossier du projet, vous pouvez lancer :
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Démarre l'APP en mode DEV.\
+Ouvrez [http://localhost:3000](http://localhost:3000) pour y accéder dans votre navigateur.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+La page se met à jour quand vous effectuez des changements dans le code.\
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Lance le mode Test (watch).\
+Lire à ce propos --> [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Construit l'APP pour la PROD dans le dossier `build`.\
+L'APP est compilée (en bundle) et optimisé.
+Le build est minifié et l'APP est prête à être déployée.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Lire à ce propos --> [deployment](https://facebook.github.io/create-react-app/docs/deployment).
 
 ### `npm run eject`
 
@@ -39,32 +37,37 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+---
+## Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![architecture du projet](./src/Assets/Images/architecture_projet.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Assets
+Contient toutes les ressources graphiques et visuelles (images, styles, fonts, etc...).
 
-### Code Splitting
+### Components
+Contient tous les composants React de l'application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Config
+Contient le fichier de configuration embarquant les variables d'environnement utilisées pour mettre en place des configurations multi-environnement dans l'application.
 
-### Analyzing the Bundle Size
+### Datas
+Contient tous les fichiers de données (json, ndjson, csv, etc...) utilisés localement par l'application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Layouts
+Contient tous les layouts de l'IHM.
 
-### Making a Progressive Web App
+### Middleware
+Contient les éléments customisés générant des effets de bord dans l'application. (REDUX)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Pages
+Contient les routes et les sous-dossiers de chaque page de l'application. Chaque page a son 'State' et est utilisée pour appeler une opération 'async'.
 
-### Advanced Configuration
+### Routes
+Contient toutes les routes de l'application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Services
+Contient les éléments propres à REDUX.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Utils
+Contient certaines fonctions isolées car répétitives dans le projet.

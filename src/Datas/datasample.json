@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "recipe" : "Tarte au poireau et à la truite fumée",
+    "difficulty" : 1,
+    "already_try" : true,
+    "time_prepare" : 20,
+    "time_cooking" : 25,
+    "detail" : ""
+  }
+]
