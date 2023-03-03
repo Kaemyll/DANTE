@@ -1,11 +1,13 @@
 import React from 'react';
 
-import {Navbar} from 'react-bootstrap';
+import NavbarCustom from "../../Components/Header/Navbar";
+
 import logo from '../../Assets/Images/logo.svg';
+
 
 export default function Header() {
     return (
-        <header>
+        <header className='Container'>
             <img
                 src={logo}
                 width="30"
@@ -13,7 +15,7 @@ export default function Header() {
                 className="d-inline-block align-top"
                 alt="Logo"
             />
-            <Navbar/>
+            <NavbarCustom/>
         </header>
     );
 };

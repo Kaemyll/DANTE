@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export function Authenticator() {
+export function Outils() {
     return (
         <div>
 

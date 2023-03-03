@@ -6,11 +6,15 @@ export const menuItems = [
         url: '/',
     },
     {
-        title: 'Authentification',
+        title: 'Se connecter',
         url: '/Authenticator',
     },
     {
         title: 'A propos de',
         url: '/About',
+    },
+    {
+        title: 'Outils',
+        url: '/Outils'
     },
 ];
