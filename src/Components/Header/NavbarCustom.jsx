@@ -8,7 +8,7 @@ export default function NavbarCustom() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home">Accueil</Nav.Link>
-                        <Nav.Link href="#link">A propos de moi</Nav.Link>
+                        <Nav.Link href="/about">A propos de moi</Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Recettes</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Jeux de rôles</NavDropdown.Item>

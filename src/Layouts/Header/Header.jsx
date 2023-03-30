@@ -1,9 +1,8 @@
 import React from 'react';
 
-import NavbarCustom from "../../Components/Header/Navbar";
+import NavbarCustom from "../../Components/Header/NavbarCustom";
 
 import logo from '../../Assets/Images/logo.svg';
-
 
 export default function Header() {
     return (
